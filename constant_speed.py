@@ -9,12 +9,15 @@ Created on Mon Jun 24 11:11:35 2024
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib import font_manager as fm
 import streamlit as st
 from sklearn.linear_model import LinearRegression
 
-plt.rcParams["font.sans-serif"] = "Microsoft JhengHei"
-plt.rcParams["axes.unicode_minus"] = False
-
+# plt.rcParams["font.sans-serif"] = "Microsoft JhengHei"
+# plt.rcParams["axes.unicode_minus"] = False
+fm.fontManager.addfont('D:\\.data\\TaipeiSansTCBeta-Regular.ttf')
+#plt.rcParams["font.size"] = 14
+plt.rcParams['font.family'] = 'Taipei Sans TC Beta'
 
 # 使用streamlit輸入
 requ_input = st.slider("輸入 管理標準相較於調查水準 的加嚴比率", 0.0, 1.2, 0.1)
