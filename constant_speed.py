@@ -15,7 +15,7 @@ from sklearn.linear_model import LinearRegression
 
 # plt.rcParams["font.sans-serif"] = "Microsoft JhengHei"
 # plt.rcParams["axes.unicode_minus"] = False
-fm.fontManager.addfont('D:\\.data\\TaipeiSansTCBeta-Regular.ttf')
+fm.fontManager.addfont('TaipeiSansTCBeta-Regular.ttf')
 #plt.rcParams["font.size"] = 14
 plt.rcParams['font.family'] = 'Taipei Sans TC Beta'
 
